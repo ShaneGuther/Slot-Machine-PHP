@@ -1,0 +1,41 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		
+		<title>SLOT MACHINE</title>
+	</head>
+	<link rel="stylesheet" href="guthers_A5inclass.css">
+		<script>
+			function hide(){
+				var bet = document.getElementById("bets");
+				if(bet > 1 && bet < 100){
+				var a = document.getElementById("set1");
+				a.style.display = "none";
+				var b = document.getElementById("set2");
+				b.style.display = "none";
+				var c = document.getElementById("set3");
+				c.style.visibility = "hidden";
+			}
+			}
+			</script>
+	<body id="container">
+		<h1>Virtual Slot Machine</h1>
+		<h2>Welcome</h2>
+		<img id="set1" src="apple.png">
+		<img id="set2" src="apple.png">
+		<img id="set3" src="apple.png">
+		<br>
+		<form id="theForm" action="guthers_A5inclass.php" method="POST" >
+			Enter your name:
+			<input type="text" name="name">
+			<br>
+			Bet
+			<input type="number" name="bet" min="1" max="100" id="bets">
+			Credit
+			<input type="number" name="credit" value="100" readonly>
+			<br>
+			<input type="submit" name="submit" value="SPIN" onclick="hide()">
+		</form>
+	</body>	
+</html>

@@ -1,0 +1,13 @@
+#theForm{
+	display: inline-block;
+}
+#container{
+	text-align: center;
+}
+input{
+	margin: 10px;
+}
+img{
+	width: 150px;
+	height: 150px;
+}
